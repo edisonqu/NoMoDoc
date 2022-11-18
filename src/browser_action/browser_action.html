@@ -1,0 +1,125 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 1000px;
+		width: 325px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+    body {
+        background: #150045;
+        font-family: var(--font-style);
+    }
+
+
+    .login-box h1 {
+        margin: 0 0 100px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 20px;
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .login-box .user-box input {
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: auto;
+        outline: none;
+        background: transparent;
+    }
+
+    .login-box .user-box label {
+        position: relative;
+        left: 0;
+        top: -50px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    #submit {
+        padding: 10px 20px;
+        color: #b687eb;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        letter-spacing: 4px;
+        border: 1px solid #8F7CEC;
+        margin: auto;
+    }
+
+    #submit:hover {
+        background: #8F7CEC;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC ;
+
+    }
+
+    .button-form{
+        display:flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    #sign-up{
+        font-size: 14px;
+        text-decoration: none;
+        color: #CBBDDB;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+
+    .sign-up a {
+        margin: auto;
+        color: #8F7CEC;
+        text-decoration: none;
+
+    }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NoMoDoc</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div class="login-box" id = "mainPopup">
+    <h1>No More Documentation!</h1>
+    <h4>Ask your question here:</h4>
+    <form onsubmit="onSubmit()">
+        <div class="user-box">
+            <input type="text" name="#" required="#">
+        </div>
+        <div class="answer">
+            <label>Output</label>
+        </div>
+
+        <div class="button-form">
+            <button = "submit" id="submit" href="#">Get Answers!</button>
+        </div>
+</div>
+</form>
+</div>
+</body>
+</html>
