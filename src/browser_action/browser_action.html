@@ -101,25 +101,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NoMoDoc</title>
-    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <div class="login-box" id = "mainPopup">
     <h1>No More Documentation!</h1>
     <h4>Ask your question here:</h4>
-    <form onsubmit="onSubmit()">
+    <form onsubmit="onSubmit(event)">
         <div class="user-box">
-            <input type="text" name="#" required="#">
+            <input type="text" name="#" id = "inputted" required="#">
         </div>
-        <div class="answer">
+        <div id="output">
             <label>Output</label>
         </div>
 
         <div class="button-form">
-            <button = "submit" id="submit" href="#">Get Answers!</button>
+            <button = "submit" id="submit">Get Answers!</button>
         </div>
+    </form>
+
 </div>
-</form>
+
 </div>
+<script src="main.js"></script>
+
 </body>
 </html>
