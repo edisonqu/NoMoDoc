@@ -2,7 +2,7 @@
 <style type="text/css">
 	#mainPopup {
 		padding: 10px;
-		height: 1000px;
+		height: 550px;
 		width: 325px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
 	}
@@ -27,7 +27,20 @@
         text-align: center;
     }
 
-    .login-box .user-box input {
+    .login-box .user-box input{
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: auto;
+        outline: none;
+        background: transparent;
+    }
+
+    #output{
+        display: flex;
+        justify-content: center;
         position: relative;
         width: 100%;
         padding: 10px 0;
@@ -110,8 +123,8 @@
         <div class="user-box">
             <input type="text" name="#" id = "inputted" required="#">
         </div>
+
         <div id="output">
-            <label>Output</label>
         </div>
 
         <div class="button-form">
